@@ -33,7 +33,7 @@ sudo cp -rf ~/node-ambeserver/* /ambeserver
 
 sudo systemctl --system daemon-reload
 
-sudo sytemctl enable ambeserver
+sudo systemctl enable ambeserver
 sudo systemctl start ambeserver
 ```
 
