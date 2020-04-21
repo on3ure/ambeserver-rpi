@@ -1,0 +1,17 @@
+[Unit]
+Description=ambeserver
+Requires=network.target
+After=network.target
+StartLimitInterval=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+SyslogIdentifier=ambeserver
+WorkingDirectory=/ambeserver
+ExecStartPre=/usr/bin/tvservice -o
+ExecStart=/usr/bin/node index.js > /dev/tty3
+
+[Install]
+WantedBy=multi-user.target
