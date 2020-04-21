@@ -42,7 +42,7 @@ sudo systemctl start ambeserver
 ```console
 echo "dtoverlay=pi3-disable-bt" | sudo tee -a /boot/config.txt
 sudo systemctl disable hciuart
-reboot
+sudo reboot
 ```
 
 ## Console ##
