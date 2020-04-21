@@ -25,8 +25,8 @@ npm install
 ## Install start scripts ##
 ```console
 cd ~
-git clone https://github.com/on3ure/ambeserver.git
-cd ambeserver
+git clone https://github.com/on3ure/ambeserver-rpi.git
+cd ambeserver-rpi
 sudo mkdir -p /ambeserver
 sudo cp ambeserver.service /lib/systemd/system/
 sudo cp -rf ~/node-ambeserver/* /ambeserver
