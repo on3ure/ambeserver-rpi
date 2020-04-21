@@ -29,6 +29,7 @@ git clone https://github.com/on3ure/ambeserver-rpi.git
 cd ambeserver-rpi
 sudo mkdir -p /ambeserver
 sudo cp ambeserver.service /lib/systemd/system/
+sudo cp ambeserver.sh /ambeserver
 sudo cp -rf ~/node-ambeserver/* /ambeserver
 
 sudo systemctl --system daemon-reload
